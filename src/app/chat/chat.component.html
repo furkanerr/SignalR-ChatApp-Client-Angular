@@ -1,0 +1,68 @@
+
+<head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+<style>
+#kutu{
+    margin-left: 330px;
+   
+    border: solid 1px;;
+    width: 480px;
+    height:580px;
+}
+.btn{
+     height: 60px;
+     width: 80px;
+}
+#kisiListeElemanı{
+     margin-top: 20px;
+     margin-left: 270px;
+     background-color: #269c7f;
+     color: white;
+
+}
+.mesajText{
+     width: 450px;
+     height: 25px;
+     margin-top: 430px;
+}
+.btnGonder{
+     height: 25px;
+     width: 25px;
+     margin-top: 430px;
+}
+</style>
+</head>
+<ul class="list-group col-4 "id="kisiler" style="margin-left: 550px;">
+     <a class="list-group-item list-group-item-action users" id="kisiListeElemanı" >Kişiler</a>
+     <div  id="kisiListesi"></div>
+</ul>
+ 
+
+
+     <div class="row" id="kutu">
+          <div class="col-12">
+     <label id="ad">Ad Girin:</label>
+     <input id="nameInput" #name type="text">
+     </div>
+     <div style="white-space: pre-line;" > 
+          <ul id="mesajBolumu"> 
+          </ul>  
+         
+     </div>
+     <div class="col-12">
+    
+   
+</div >
+   
+      <button (click)="GirisYap( name.value)"  onclick="this.disabled=true;"  id="girisButton"  class="btn btn-success fal fa-paper-plane col-12">Giriş yap</button>
+      <input #mesaj type="text" class=" mesajText">
+      <button   (click)="Gonder(mesaj.value , name.value)"  class="btn btn-success fal fa-paper-plane btnGonder"> 
+          </button>
+
+     </div>
+        
+     
+
+ 
